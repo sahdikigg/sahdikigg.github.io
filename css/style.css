@@ -1,0 +1,308 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@600&display=swap'); /* for headline */
+@import url('https://fonts.googleapis.com/css2?family=Overpass:wght@300&display=swap'); /* common font */
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Mono:wght@300&display=swap'); /* common font */
+@import url('https://fonts.googleapis.com/css2?family=Fjalla+One&display=swap');
+html {
+  scroll-behavior: smooth;
+}
+
+body {
+  overflow-x: hidden;
+  box-sizing: border-box;
+  background: #0a192f;
+  background: linear-gradient(180deg, #0a192f 48%, #112240 100%);
+  background-attachment: fixed;
+}
+p {
+  color: aquamarine;
+  font-family: 'Roboto Mono', sans-serif;
+  font-size: 16px;
+}
+#navbar {
+  transition: top 0.3s;
+  top: 0;
+  background-color: #0a192fee;
+  z-index: 9999;
+  width: 100%;
+  box-shadow: 0 4px 30px rgba(13, 26, 45, 0.1);
+  backdrop-filter: blur(10.6px);
+}
+nav a img {
+  transition: 0.3s all ease-in-out;
+}
+nav a img:hover {
+  filter: brightness(97%) hue-rotate(131deg);
+  -webkit-filter: brightness(97%) hue-rotate(101deg);
+  -moz-filter: brightness(97%) hue-rotate(101deg);
+}
+nav ul li .nav-link {
+  font-family: 'Roboto Mono', sans-serif !important;
+  font-weight: 500;
+  font-size: 14.3px;
+  color: aquamarine;
+  animation: 0.3, ease-in-out;
+}
+nav ul li .nav-link:hover {
+  color: white;
+  text-shadow: 0 0 5px rgba(13, 217, 231, 0.418);
+}
+nav ul li {
+  margin-right: 15px;
+}
+.btn-resume {
+  background: transparent;
+  color: aquamarine;
+  border: 1.8px solid aquamarine;
+  border-radius: 3px;
+  transition: 0.3s all ease-in-out;
+}
+.btn-resume:hover {
+  color: white;
+  box-shadow: 0 0 8px rgba(13, 217, 231, 0.418);
+}
+.headline {
+  margin-top: 5.5rem;
+}
+.headline h2 {
+  margin: -6px;
+  padding: 0;
+  font-size: 4.6rem;
+  font-weight: bold;
+  color: rgba(240, 255, 255, 0.932);
+  font-family: 'Jost', sans-serif;
+  letter-spacing: 6px;
+  animation: 0.3s ease-in-out;
+}
+.headline h3 {
+  font-size: 2.3rem;
+  font-weight: bold;
+  color: #8892b0;
+}
+.headline span {
+  font-size: 16px !important;
+  color: rgba(240, 255, 255, 0.932);
+  font-family: 'Roboto Mono', sans-serif;
+  letter-spacing: 1px;
+  font-weight: lighter;
+}
+.headline .description p {
+  color: rgba(185, 191, 199, 0.932);
+}
+.about {
+  margin-top: 6rem;
+}
+.about h4 {
+  font-weight: bold;
+  color: rgba(185, 191, 199, 0.932);
+  font-family: 'Jost', sans-serif;
+  border-bottom: 1px solid aquamarine;
+  padding-bottom: 5px;
+}
+.about p {
+  font-size: 15px;
+  color: rgba(185, 191, 199, 0.932);
+}
+.about .bootstrap {
+  text-decoration: none;
+  color: rgb(126, 29, 216);
+  transition: 0.3s all ease-in-out;
+}
+.about .bootstrap:hover {
+  text-shadow: 0 0 6px rgba(155, 15, 236, 0.418);
+}
+.about .laravel {
+  text-decoration: none;
+  color: brown;
+  transition: 0.3s all ease-in-out;
+}
+.about .laravel:hover {
+  text-shadow: 0 0 6px rgba(236, 65, 13, 0.418);
+}
+.about .polnep {
+  text-decoration: none;
+  color: aquamarine;
+  transition: 0.3s all ease-in-out;
+}
+.about .polnep:hover {
+  text-shadow: 0 0 6px aquamarine;
+}
+.about img {
+  border-radius: 3px;
+  box-shadow: 10px 10px 0 aquamarine, 20px 20px 0 salmon;
+  filter: grayscale(14%) sepia(68%) blur(1px) hue-rotate(141deg) saturate(142%) invert(8%);
+  -webkit-filter: grayscale(14%) sepia(68%) blur(0.6px) hue-rotate(122deg) saturate(142%) invert(8%);
+  -moz-filter: grayscale(14%) sepia(68%) blur(1px) hue-rotate(141deg) saturate(142%) invert(8%);
+  transition: 0.3s all ease-in-out;
+}
+.about img:hover {
+  filter: none;
+  box-shadow: 5px 5px 0 aquamarine, 10px 10px 0 salmon;
+  transform: translate(2px, 2px);
+}
+.skills {
+  margin-top: 6rem;
+}
+.skills h4 {
+  font-family: 'Jost', sans-serif;
+  color: rgba(185, 191, 199, 0.932);
+  border-bottom: 1px solid aquamarine;
+  padding-bottom: 5px;
+}
+.skills p {
+  font-size: 15px;
+  font-weight: bold;
+  color: rgba(185, 191, 199, 0.932);
+}
+.skills ul li {
+  color: aquamarine;
+  font-family: 'Jost', sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  list-style-type: '> ';
+}
+.skills ul li span {
+  font-family: 'Roboto Mono', sans-serif;
+  font-weight: normal;
+  font-size: 14px;
+  color: #ccd6f6;
+}
+.skills ul li p {
+  margin-top: 0.9rem;
+  font-weight: normal;
+}
+.project {
+  margin-top: 6rem;
+}
+.project h3 {
+  color: yellowgreen;
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 2rem;
+  margin-bottom: 2rem;
+  font-family: 'Roboto Mono', sans-serif;
+}
+.project h4 {
+  font-family: 'Jost', sans-serif;
+  color: rgba(185, 191, 199, 0.932);
+  border-bottom: 1px solid aquamarine;
+  padding-bottom: 5px;
+}
+.project .bg-col {
+  background-color: rgb(52, 68, 92);
+  border-radius: none;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+}
+
+.project .side .card {
+  position: absolute !important;
+  background: #222f38;
+  top: 41%;
+  left: -11%;
+  box-shadow: 0 0 18px rgba(0, 0, 0, 0.4);
+}
+.project .pro a .card {
+  transition: 0.3s all ease-in-out;
+}
+.project .pro a .card:hover {
+  background: #4c5f70;
+}
+.project .side .card p {
+  color: rgba(185, 191, 199, 0.932);
+  font-size: 14px;
+}
+.project .side h5 {
+  color: rgba(185, 191, 199, 0.932);
+  font-family: 'Jost', sans-serif;
+  font-weight: bolder;
+  float: right;
+  margin-top: 1rem;
+  font-size: 1.6rem;
+}
+.project h5 {
+  color: aquamarine;
+  font-family: 'Jost', sans-serif;
+  font-weight: bolder;
+  float: right;
+  margin-top: 0.3rem;
+  font-size: 1rem;
+}
+.project .built p {
+  font-size: 14px;
+}
+.contacs {
+  margin-top: 18rem;
+}
+.contacs h4 {
+  font-size: 2.1rem;
+  font-family: 'Jost', sans-serif;
+  color: rgba(185, 191, 199, 0.932);
+  border-bottom: 1px solid aquamarine;
+  padding-bottom: 5px;
+}
+.contacs .talks p {
+  color: rgba(185, 191, 199, 0.932);
+}
+.fix .left .betul {
+  bottom: 22%;
+}
+.fix .left .betul li {
+  padding-top: 7px;
+  padding-bottom: 7px;
+}
+.fix .left .betul li a {
+  margin: 0;
+  font-size: 19px;
+  color: rgba(172, 178, 185, 0.932);
+  transition: 0.3s all ease-in-out;
+}
+.fix .left .betul li a:hover {
+  transform: translateY(-2px) !important;
+  color: aquamarine;
+}
+.fix .left .tidak-betul li {
+  color: aquamarine;
+  margin-top: -8px;
+  padding-left: 8px;
+  /* color: rgba(172, 178, 185, 0.932); */
+}
+.fix .right .betul {
+  bottom: 34%;
+  right: -0.22%;
+}
+.fix .right .tidak-betul {
+  bottom: 23%;
+  right: 6.5%;
+}
+.fix .right .betul li p {
+  transform: rotate(90deg);
+  color: rgba(191, 198, 206, 0.932);
+}
+.fix .right .betul li {
+  padding-top: 15px;
+  font-size: 19px;
+  transition: 0.3s all ease-in-out;
+}
+.fix .right .betul li:hover {
+  transform: translateY(-2px);
+  color: aquamarine;
+}
+.fix .right .tidak-betul li {
+  color: aquamarine;
+  margin-top: -8px;
+  padding-left: 8px;
+  /* color: rgba(172, 178, 185, 0.932); */
+}
+#footer {
+  margin-top: 3rem;
+  padding: 2rem;
+}
+#footer p {
+  font-family: 'Roboto Mono', sans-serif !important;
+  color: aquamarine;
+  font-size: 14px;
+  transition: 0.3s all ease-in-out;
+}
+#footer ul li a {
+  color: rgba(172, 178, 185, 0.932);
+  margin: 0 1rem 0 .8rem;
+}
