@@ -18,6 +18,13 @@ p {
   font-family: 'Roboto Mono', sans-serif;
   font-size: 16px;
 }
+section h4 {
+  font-weight: bold;
+  color: rgba(185, 191, 199, 0.932);
+  font-family: 'Jost', sans-serif;
+  border-bottom: 1px solid aquamarine;
+  padding-bottom: 5px;
+}
 #navbar {
   transition: top 0.3s;
   top: 0;
@@ -38,9 +45,13 @@ nav a img:hover {
 nav ul li .nav-link {
   font-family: 'Roboto Mono', sans-serif !important;
   font-weight: 500;
-  font-size: 14.3px;
+  font-size: 13.6px;
   color: aquamarine;
   animation: 0.3, ease-in-out;
+}
+nav ul li .nav-link span {
+  color: white;
+  margin-right: 4px;
 }
 nav ul li .nav-link:hover {
   color: white;
@@ -48,6 +59,11 @@ nav ul li .nav-link:hover {
 }
 nav ul li {
   margin-right: 15px;
+}
+section .nmb {
+  color: aquamarine;
+  font-weight: 200 !important;
+  font-family: 'Roboto Mono', sans-serif !important;
 }
 .btn-resume {
   background: transparent;
@@ -91,13 +107,6 @@ nav ul li {
 .about {
   margin-top: 6rem;
 }
-.about h4 {
-  font-weight: bold;
-  color: rgba(185, 191, 199, 0.932);
-  font-family: 'Jost', sans-serif;
-  border-bottom: 1px solid aquamarine;
-  padding-bottom: 5px;
-}
 .about p {
   font-size: 15px;
   color: rgba(185, 191, 199, 0.932);
@@ -139,14 +148,34 @@ nav ul li {
   box-shadow: 5px 5px 0 aquamarine, 10px 10px 0 salmon;
   transform: translate(2px, 2px);
 }
-.skills {
-  margin-top: 6rem;
+.work {
+  margin-top:6rem ;
 }
-.skills h4 {
-  font-family: 'Jost', sans-serif;
+.work p {
+  font-size: 14px;
   color: rgba(185, 191, 199, 0.932);
-  border-bottom: 1px solid aquamarine;
-  padding-bottom: 5px;
+}
+.work .rowbg {
+  top: 50%;
+  left: 40%;
+  z-index: -999 !important;
+}
+.work .bg-work {
+  background-image: url(../img/marten-bjork-6dW3xyQvcYE-unsplash.jpg);
+  background-position: center;
+  box-shadow: 5px 5px 5px rgba(0, 0, 0, 0.2);
+  width: 350px;
+  height: 250px;
+  background-size: cover;
+  padding: 0;
+}
+.work .sill {
+  background-color: rgba(11, 18, 49, 0.678);
+  position: relative;
+  height: 250px;
+}
+.skills {
+  margin-top:7rem;
 }
 .skills p {
   font-size: 15px;
@@ -180,12 +209,6 @@ nav ul li {
   margin-top: 2rem;
   margin-bottom: 2rem;
   font-family: 'Roboto Mono', sans-serif;
-}
-.project h4 {
-  font-family: 'Jost', sans-serif;
-  color: rgba(185, 191, 199, 0.932);
-  border-bottom: 1px solid aquamarine;
-  padding-bottom: 5px;
 }
 .project .bg-col {
   background-color: rgb(52, 68, 92);
